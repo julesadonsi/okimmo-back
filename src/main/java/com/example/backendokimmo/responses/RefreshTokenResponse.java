@@ -1,15 +1,11 @@
 package com.example.backendokimmo.responses;
 
-import com.example.backendokimmo.responses.users.UserResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class AuthResponse {
-    private String token;
+public class RefreshTokenResponse {
     private String refreshToken;
-    private UserResponse user;
+    private String token;
 }
-
-
